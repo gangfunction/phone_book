@@ -8,6 +8,7 @@ public class Search2{
         for(int i = 0; i < new_person.getCnt(); i++){
             if(new_person.array2[i].equals(name)){
                 System.out.println(new_person.array2[i]);
+                Main.main2();
             }
         }
     }}

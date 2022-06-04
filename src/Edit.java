@@ -21,16 +21,13 @@ public class Edit{
                     int cnt = 0;
 
                     String beta = name2+"\t"+phone2+"\t"+address2;
-                    new_person.array2[cnt++] = beta;
+                    new_person.array2[cnt] = beta;
                     System.out.println("수정되었습니다.");
 
-                    menu.getMain();
-                    menu.getMain2();
+                    Main.main2();
                 } else {
                     System.out.println("수정할 수 없습니다.");
-
-                    menu.getMain();
-                    menu.getMain2();
+                    Main.main2();
                 }
 
             }

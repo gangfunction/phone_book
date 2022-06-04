@@ -16,6 +16,7 @@ class Exit{
         }
         else if(exit == 2){
             System.out.println("종료되지 않았습니다.");
+            Main.main2();
         }
     }
 
@@ -35,8 +36,6 @@ class Main {
         menu m = new menu();
         menu.menu_print();
         menu.menu_select();
-
-
 
     }
 }
@@ -61,22 +60,16 @@ class Main {
         static void menu_select(){
             int select;
             System.out.println("메뉴를 선택하세요.");
-            System.out.println("-----------------------------------------------------");
+            System.out.println("----------------------------------------------------");
             select = sc.nextInt();
             switch (select) {
                 case 1 -> new_person.add2();
                 case 2 -> Edit.edit();
                 case 3 -> deletion.delete();
                 case 4 -> total_print.prin2();
-                case 5 -> {
-                    System.out.println("종료");
-                    Exit.exit();
-                }
-                case 6 -> {
-                    System.out.println("검색할 이름을 입력하세요.");
-                    Search2.search();
-                    Main.main2();
-                }
+                case 5 -> Exit.exit();
+                case 6 -> Search2.search();
+
                 default -> {
                     System.out.println("잘못된 입력입니다.");
                     Main.main2();
