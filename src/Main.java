@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -22,7 +23,6 @@ class Exit {
 
 class Main {
     public static void main(String[] args) {
-        menu m = new menu();
         menu.menu_print();
         menu.menu_select();
 
@@ -30,7 +30,6 @@ class Main {
 
     public static void main2() {
         //추가,검색, 수정, 삭제, 전체출력, 종료
-        menu m = new menu();
         menu.menu_print();
         menu.menu_select();
 
@@ -39,14 +38,6 @@ class Main {
 
 class menu {
     static Scanner sc = new Scanner(System.in);
-
-    public static void getMain() {
-        menu.menu_print();
-    }
-
-    public static void getMain2() {
-        menu.menu_select();
-    }
 
     static void menu_print() {
         System.out.println("----------------------------------------------------");
@@ -60,10 +51,14 @@ class menu {
     }
 
     static void menu_select() {
-        int select;
-        System.out.println("메뉴를 선택하세요.");
+        int select = 0;
+        System.out.println("메뉴를 선택하세요. 1~6 까지의 자연수를 입력바랍니다.");
         System.out.println("----------------------------------------------------");
-        select = sc.nextInt();
+        try{
+             select = sc.nextInt();
+        }catch(InputMismatchException e){
+            System.out.println("잘못된 입력입니다.");
+        }
         switch (select) {
             case 1 -> Addition.add2();
             case 2 -> Edit.edit();
@@ -71,11 +66,7 @@ class menu {
             case 4 -> Prin2.prin2();
             case 5 -> Exit.exit();
             case 6 -> Search.search();
-
-            default -> {
-                System.out.println("잘못된 입력입니다.");
-                Main.main2();
-            }
+            default -> Main.main2();
         }
     }
 

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1678ab12-10db-4bc1-bad1-a7569f121329" name="변경" comment="DELETION 구현">
+    <list default="true" id="1678ab12-10db-4bc1-bad1-a7569f121329" name="변경" comment="VARIABLES REVISED">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Edit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Search2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deletion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new_person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Addition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/total_print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654226049328</updated>
       <workItem from="1654226051706" duration="7397000" />
-      <workItem from="1654253429550" duration="30095000" />
+      <workItem from="1654253429550" duration="31111000" />
     </task>
     <task id="LOCAL-00001" summary="CREATE 기능수정">
       <created>1654265468174</created>
@@ -110,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654333061438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="VARIABLES REVISED">
+      <created>1654334456915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654334456915</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +134,8 @@
     <MESSAGE value="CREATE 저장안되는경우 해결" />
     <MESSAGE value="DELETION 분리" />
     <MESSAGE value="DELETION 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="DELETION 구현" />
+    <MESSAGE value="VARIABLES REVISED" />
+    <option name="LAST_COMMIT_MESSAGE" value="VARIABLES REVISED" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
