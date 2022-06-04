@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class deletion{
+public class Deletion {
 
     public static void delete() {
         System.out.println("삭제할 이름을 입력하세요");
@@ -9,19 +9,19 @@ public class deletion{
         int result = 0;
         //조사해서 삭제할 이름이 어떤 인덱스에 있는지 확인,
         int i;
-        for (i=0; i < new_person.cnt; i++) {
-            if (new_person.array2[i].contains(name2)) {
+        for (i = 0; i < Addition.cnt; i++) {
+            if (Addition.array[i].contains(name2)) {
                 result = i;
                 break;
             }
         }
-        // 다음값과 일치시켜 삭제 시키기
-        for (i = result; i < new_person.cnt; i++) {
-            new_person.array2[i] = new_person.array2[i + 1];
+        // 삭제 시키기
+        for (i = result; i < Addition.cnt; i++) {
+            Addition.array[i] = Addition.array[i + 1];
             System.out.println("삭제되었습니다.");
 
         }
-        new_person.cnt--;
+        Addition.cnt--;
         Main.main2();
     }
-        }
+}
