@@ -9,11 +9,14 @@ public class total_print {
         String array= Arrays.toString(new_person.getArray2());
         if (new_person.getCnt() == 0) {
             System.out.println("저장된 정보가 없습니다.");
+            Main.main2();
         }
 
         for (int i = 0; i < array_size; i++) {
-                System.out.println(new_person.getArray2()[i]);
-            }
+            System.out.println(new_person.getArray2()[i]);
         }
+        Main.main2();
+
+    }
 
     }

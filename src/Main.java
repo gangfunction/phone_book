@@ -66,18 +66,8 @@ class Main {
             switch (select) {
                 case 1 -> new_person.add2();
                 case 2 -> Edit.edit();
-                case 3 -> {
-                    System.out.println("삭제할 인덱스를 입력하세요.");
-                    deletion d = new deletion();
-                    d.delete();
-                    Main.main2();
-                }
-                case 4 -> {
-                    System.out.println("전체출력");
-                    total_print.prin2();
-                    System.out.flush();
-                    Main.main2();
-                }
+                case 3 -> deletion.delete();
+                case 4 -> total_print.prin2();
                 case 5 -> {
                     System.out.println("종료");
                     Exit.exit();
