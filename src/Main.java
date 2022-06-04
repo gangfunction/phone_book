@@ -1,43 +1,25 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 
-class Edit{
-    static void edit(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("수정하실 항목을 성명, 연락처, 주소 순으로 입력하여 주십시오.");
-        String name, phone, address;
-        System.out.println("성명 :");
-        name = sc.next();
-        System.out.println("연락처 :");
-        phone = sc.next();
-        System.out.println("주소 :");
-        address = sc.next();
-
-            }
-        }
-
-
 class deletion{
-
     public void delete() {
         String[] array2 = new_person.array2;
         System.out.println("삭제할 이름을 입력하세요");
         Scanner sc = new Scanner(System.in);
-        String name = String.valueOf(Objects.requireNonNull(sc).next());
-        for(int i = 0; i < new_person.getCnt(); i++){
+        String name = sc.next();
+        int i,j;
+        for( i = 0; i < new_person.getCnt(); i++){
             if(array2[i].equals(name)){
-                for(int j = i; j < new_person.getCnt(); j++){
+                for(j = 0; j < new_person.getCnt() ; j++ ){
                     array2[j] = array2[j+1];
                     array2[j] = array2[j+1];
                 }
-                new_person.setCnt();
                 System.out.println("삭제되었습니다.");
             }
         }
 }
 
-public static class Exit{
+static class Exit{
     static void exit(){
         System.out.println("종료하시겠습니까?");
         System.out.println("1.종료");
@@ -57,46 +39,49 @@ public static class Exit{
 
 
 }
-public class Main {
-    public static Object main;
+class Main {
     public static void main(String[] args){
         menu m = new menu();
         menu.menu_print();
-        m.menu_select();
+        menu.menu_select();
 
     }
     public static void main2(){
         //추가,검색, 수정, 삭제, 전체출력, 종료
         menu m = new menu();
         menu.menu_print();
-        m.menu_select();
+        menu.menu_select();
 
 
 
     }
 }
-    class menu{
-        Scanner sc= new Scanner(System.in);
+ class menu{
+        static Scanner sc= new Scanner(System.in);
+        public static void getMain(){
+            menu.menu_print();
+        }
+        public static void getMain2(){
+            menu.menu_select();
+     }
         static void menu_print(){
+            System.out.println("----------------------------------------------------");
             System.out.println("1.추가");
             System.out.println("2.수정");
             System.out.println("3.삭제");
             System.out.println("4.전체출력");
             System.out.println("5.종료");
             System.out.println("6.검색");
+            System.out.println("----------------------------------------------------");
         }
-        void menu_select(){
+        static void menu_select(){
             int select;
             System.out.println("메뉴를 선택하세요.");
+            System.out.println("-----------------------------------------------------");
             select = sc.nextInt();
             switch (select) {
-                case 1 -> {
-                    new_person.add2();
-                }
-                case 2 -> {
-                    System.out.println("수정할 인덱스를 입력하세요.");
-                    Edit.edit();
-                }
+                case 1 -> new_person.add2();
+                case 2 -> Edit.edit();
                 case 3 -> {
                     System.out.println("삭제할 인덱스를 입력하세요.");
                     deletion d = new deletion();
