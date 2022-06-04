@@ -1,25 +1,9 @@
 import java.util.Scanner;
 
 
-class deletion{
-    public void delete() {
-        String[] array2 = new_person.array2;
-        System.out.println("삭제할 이름을 입력하세요");
-        Scanner sc = new Scanner(System.in);
-        String name = sc.next();
-        int i,j;
-        for( i = 0; i < new_person.getCnt(); i++){
-            if(array2[i].equals(name)){
-                for(j = 0; j < new_person.getCnt() ; j++ ){
-                    array2[j] = array2[j+1];
-                    array2[j] = array2[j+1];
-                }
-                System.out.println("삭제되었습니다.");
-            }
-        }
-}
 
-static class Exit{
+
+class Exit{
     static void exit(){
         System.out.println("종료하시겠습니까?");
         System.out.println("1.종료");
@@ -38,7 +22,7 @@ static class Exit{
 }
 
 
-}
+
 class Main {
     public static void main(String[] args){
         menu m = new menu();
@@ -96,7 +80,7 @@ class Main {
                 }
                 case 5 -> {
                     System.out.println("종료");
-                    deletion.Exit.exit();
+                    Exit.exit();
                 }
                 case 6 -> {
                     System.out.println("검색할 이름을 입력하세요.");
