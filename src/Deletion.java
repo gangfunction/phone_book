@@ -22,6 +22,6 @@ public class Deletion {
 
         }
         Addition.cnt--;
-        Main.main2();
+        Main.main1();
     }
 }

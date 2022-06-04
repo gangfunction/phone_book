@@ -7,13 +7,13 @@ public class Prin2 {
         System.out.println("이름\t연락처\t주소");
         if (Addition.cnt == 0) {
             System.out.println("저장된 정보가 없습니다.");
-            Main.main2();
+            Main.main1();
         }
-
-        for (int i = 0; i < array_size; i++) {
-            System.out.println(Addition.getarray()[i]);
+        int i;
+        for (i = 0; i < array_size; i++) {
+            System.out.println(Addition.array[i]);
         }
-        Main.main2();
+        Main.main1();
 
     }
 

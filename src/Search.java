@@ -8,7 +8,7 @@ public class Search {
         for (int i = 0; i < Addition.cnt; i++) {
             if (Addition.array[i].equals(name)) {
                 System.out.println(Addition.array[i]);
-                Main.main2();
+                Main.main1();
             }
         }
     }

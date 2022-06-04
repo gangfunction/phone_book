@@ -24,10 +24,10 @@ public class Edit {
                     Addition.array[cnt] = alpha;
                     System.out.println("수정되었습니다.");
 
-                    Main.main2();
+                    Main.main1();
                 } else {
                     System.out.println("수정할 수 없습니다.");
-                    Main.main2();
+                    Main.main1();
                 }
 
             }

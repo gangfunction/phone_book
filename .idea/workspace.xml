@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1678ab12-10db-4bc1-bad1-a7569f121329" name="변경" comment="VARIABLES REVISED">
+    <list default="true" id="1678ab12-10db-4bc1-bad1-a7569f121329" name="변경" comment="MENU MISINPUT DENIED">
+      <change afterPath="$PROJECT_DIR$/src/Exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hash.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Addition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deletion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Edit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prin2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prin2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654226049328</updated>
       <workItem from="1654226051706" duration="7397000" />
-      <workItem from="1654253429550" duration="31111000" />
+      <workItem from="1654253429550" duration="38335000" />
     </task>
     <task id="LOCAL-00001" summary="CREATE 기능수정">
       <created>1654265468174</created>
@@ -112,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654334456915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MENU MISINPUT DENIED">
+      <created>1654342540545</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654342540545</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +149,8 @@
     <MESSAGE value="DELETION 분리" />
     <MESSAGE value="DELETION 구현" />
     <MESSAGE value="VARIABLES REVISED" />
-    <option name="LAST_COMMIT_MESSAGE" value="VARIABLES REVISED" />
+    <MESSAGE value="MENU MISINPUT DENIED" />
+    <option name="LAST_COMMIT_MESSAGE" value="MENU MISINPUT DENIED" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
