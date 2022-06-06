@@ -26,6 +26,7 @@ class Main {
 class menu {
     static Scanner sc = new Scanner(System.in);
     static void mode_print(){
+        System.out.println("어서오십시오. 손님");
         System.out.println("어떤 모드를 선택하시겠습니까?");
         System.out.println("1.리스트 사용");
         System.out.println("2.해시맵 사용");
